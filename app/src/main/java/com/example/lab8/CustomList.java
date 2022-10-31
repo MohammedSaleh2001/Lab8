@@ -61,6 +61,18 @@ public class CustomList extends ArrayAdapter<City> {
         cities.add(city);
     }
 
+    /**
+     * Check if the Cringe city list has a specific cringe city
+     * @param city the cringe city
+     * @return boolean
+     */
+    public boolean hasCity(City city) {
+        if (cities.contains(city)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 
 
