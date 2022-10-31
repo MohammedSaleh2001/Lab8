@@ -74,6 +74,17 @@ public class CustomList extends ArrayAdapter<City> {
         }
     }
 
+    /**
+     * Delete the cringe city from the cringe city list.
+     * @param city the cringe city
+     */
+    public void delete(City city) {
+        if (! cities.contains(city)) {
+            throw new IllegalArgumentException();
+        }
+        cities.remove(city);
+    }
+
 
 
 }
